@@ -1,0 +1,16 @@
+{
+  "id": "3c8b205e-fa21-4de0-87f2-b708fbf90a49",
+  "timestamp": "2018-02-06T17:52:37.717Z",
+  "lang": "en",
+  "result": {
+    "parameters": {
+      "search_text": "Yo mama's so fat"
+    },
+    "metadata": {
+      "intentId": "21fb75ae-99b8-40ed-add0-1488f3ea27ec",
+      "intentName": "match_kids_jokes"
+    }
+  },
+
+  "sessionId": "6d6ed6cc-4b18-439e-8ec7-a56c441f0f29"
+}
