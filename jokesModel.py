@@ -14,23 +14,23 @@ from nltk.corpus import stopwords
 from nltk import download
 
 
-with open ('./kid_joke_q.txt', 'rb') as fp:
+with open ('/home/uwyang/mysite/kid_joke_q.txt', 'rb') as fp:
     kid_qs = pickle.load(fp)
 
-with open ('./kid_joke_a.txt', 'rb') as fp:
+with open ('/home/uwyang/mysite/kid_joke_a.txt', 'rb') as fp:
     kid_as = pickle.load(fp)
 
-with open ('./kids_q_corpus.pickle', 'rb') as fp:
+with open ('/home/uwyang/mysite/kids_q_corpus.pickle', 'rb') as fp:
     kids_q_corpus = pickle.load(fp)
     
 
-tfidf = TfidfModel.load('./jokes_tfidf.model')
-lsi = LsiModel.load('./jokes_lsi.model')
+tfidf = TfidfModel.load('/home/uwyang/mysite/jokes_tfidf.model')
+lsi = LsiModel.load('/home/uwyang/mysite/jokes_lsi.model')
 
 
 download('stopwords')
 stop_words = stopwords.words('english')
-dictionary = corpora.Dictionary.load('./all_jokes_dictionary.model')
+dictionary = corpora.Dictionary.load('/home/uwyang/mysite/all_jokes_dictionary.model')
 
 
 def preprocess(text):
